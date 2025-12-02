@@ -19,13 +19,14 @@ The simulation logic ensures safety: Vehicles stop at red lights, and pedestrian
 ## ⚙️ Technical Features
 * **Concurrency & Multithreading:** Utilizes `ExecutorService` to manage separate threads for each vehicle, pedestrian, and traffic light, ensuring smooth concurrent execution.
 * **Custom Map Parsing:** The environment layout (roads, sidewalks, crosswalks) is dynamically loaded from a `plan.csv` file into a 2D grid.
+* **Pathfinding Algorithm:** Implemented the **A* (A-Star)** algorithm to calculate optimal paths for pedestrians, enabling intelligent navigation across the grid.
 * **Real-time Rendering:** A Swing `Timer` refreshes the UI every 16ms (~60 FPS) for smooth animation.
 * **Object-Oriented Design:** Modular structure with separate classes for `Vehicules`, `Pietons`, and `Feu` (Traffic Lights).
 
 ## 🛠️ Built With
 * **Language:** Java
 * **GUI Framework:** Java Swing (`JPanel`, `Graphics`)
-* **Data Source:** CSV (Comma Separated Values)
+* **Data Source:** CSV 
 
 ## 👥 Credits & Team
 This project was developed as a collaborative effort:
@@ -61,13 +62,14 @@ La logique de simulation assure la sécurité : les véhicules s'arrêtent aux f
 ## ⚙️ Fonctionnalités Techniques
 * **Concurrence & Multithreading :** Utilise `ExecutorService` pour gérer des threads séparés pour chaque véhicule, piéton et feu, assurant une exécution concurrente fluide.
 * **Analyse de Carte Personnalisée :** La disposition de l'environnement (routes, trottoirs, passages piétons) est chargée dynamiquement depuis un fichier `plan.csv` dans une grille 2D.
+* **Algorithme de Recherche de Chemin :** Implémentation de l'algorithme **A* (A-Star)** pour permettre aux piétons de calculer le chemin optimal à travers la grille.
 * **Rendu en Temps Réel :** Un `Timer` Swing rafraîchit l'interface toutes les 16ms (~60 FPS) pour une animation fluide.
 * **Conception Orientée Objet :** Structure modulaire avec des classes séparées pour `Vehicules`, `Pietons`, et `Feu`.
 
 ## 🛠️ Technologies Utilisées
 * **Langage :** Java
 * **Interface Graphique (GUI) :** Java Swing (`JPanel`, `Graphics`)
-* **Source de données :** CSV (Comma Separated Values)
+* **Source de données :** CSV 
 
 ## 👥 Crédits & Équipe
 Ce projet a été développé dans le cadre d'un effort collaboratif :
